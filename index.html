@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Vegas Venture</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+
+	<style type="text/css">
+		#flashingtext{
+			font-family: 'Jockey One', sans-serif;
+			font-size: 150px;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+		//how to make colors flash
+		function flashtext(ele,col) {
+    		var tmpColCheck = document.getElementById( ele ).style.color;
+
+      			if (tmpColCheck === 'silver') {
+        			document.getElementById( ele ).style.color = col;
+      			} 
+
+      			else {
+        			document.getElementById( ele ).style.color = 'silver';
+      			}
+    	} 
+
+    setInterval(function() {
+        flashtext('flashingtext','red');
+        
+    }, 500 ); //set an interval timer up to repeat the function
+	</script>
+
+	<div id="flashingtext">THE MASTER'S PROJECT II</div>
+
+
+</body>
+</html>
