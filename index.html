@@ -5,41 +5,77 @@
 	<title>The Vegas Venture</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
 
 	<style type="text/css">
+
 		#flashingtext{
 			font-family: 'Jockey One', sans-serif;
 			font-size: 150px;
 			text-align: center;
 		}
 
+		#subhead{
+			font-family: 'Enriqueta', serif;
+			font-size: 30px;
+			text-align: center;
+		}
+
+		#end{
+			background-color:		silver;
+			color:					red;
+			text-align:				center;
+			margin-bottom:			30px;
+	}
+
+		#empty{
+			height:				500px;
+		}
+
 	</style>
 </head>
+
 <body>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 
 		//how to make colors flash
-		function flashtext(ele,col) {
-    		var tmpColCheck = document.getElementById( ele ).style.color;
+			function flashtext(ele,col) {
+    			var tmpColCheck = document.getElementById( ele ).style.color;
 
-      			if (tmpColCheck === 'silver') {
-        			document.getElementById( ele ).style.color = col;
-      			} 
+      				if (tmpColCheck === 'silver') {
+        				document.getElementById( ele ).style.color = col;
+      				} 
 
-      			else {
-        			document.getElementById( ele ).style.color = 'silver';
-      			}
-    	} 
+      				else {
+        				document.getElementById( ele ).style.color = 'silver';
+      				}
+    		} 
 
-    setInterval(function() {
-        flashtext('flashingtext','red');
+    		setInterval(function() {
+        		flashtext('flashingtext','red');
         
-    }, 500 ); //set an interval timer up to repeat the function
-	</script>
+    		}, 500 ); //set an interval timer up to repeat the function
+		</script>
 
+<!-- Actual content of page -->
+
+<div class="container-fluid">
 	<div id="flashingtext">THE MASTER'S PROJECT II</div>
+	<div id="subhead">under construction</div>
+</div>
+
+<div class="container" id="empty">
+	<!-- Content will go here eventually. -->
+</div>
+
+<!-- Footer -->
+<div class="row">
+	<div class="col-sm-12" id="end">
+			<h4>THIS PAGE WAS PUBLISHED BY GITHUB PAGES. FONTS USED: JOCKEY ONE, ENRIQUETA.</h4>
+	</div>
+</div>
 
 
 </body>
